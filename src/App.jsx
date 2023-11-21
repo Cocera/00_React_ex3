@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      < Counter />
+      < Counter counter={5}/>
     </>
   )
 }
