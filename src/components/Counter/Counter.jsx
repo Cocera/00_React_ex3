@@ -9,7 +9,11 @@ const Counter = (props) => {
     };
 
     const decrease = () => {
-        setCounter(counter - props.countValue);
+        if (counter > 0) {
+            setCounter(counter - props.countValue);
+        } else {
+            alert('¡El contador está en 0!')
+        }
     };
 
     const restart = () => {
